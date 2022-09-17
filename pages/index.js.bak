@@ -1,48 +1,14 @@
-<>
-  import Head from 'next/head'; import styles from '../styles/Home.module.css';
-  export default function Home() {"{"}
-  return (
-  <div classname="{styles.container}">
-    <title>Create Next App</title>
-    <main classname="{styles.main}">
-      <h1 classname="{styles.title}">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-      <p classname="{styles.description}">
-        Get started by editing{"{"}' '{"}"}
-        <code classname="{styles.code}">pages/index.js</code>
-      </p>
-      <div classname="{styles.grid}">
-        <a href="https://nextjs.org/docs" classname="{styles.card}">
-          <h3>Documentation →</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-        <a href="https://nextjs.org/learn" classname="{styles.card}">
-          <h3>Learn →</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          classname="{styles.card}"
-        >
-          <h3>Examples →</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          classname="{styles.card}"
-        >
-          <h3>Deploy →</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
-      </div>
-    </main>
-    <footer classname="{styles.footer}">
-      <a href="https://next.new" target="_blank" rel="noopener noreferrer">
-        Created with&nbsp;<b>next.new</b>&nbsp;⚡️
-      </a>
-    </footer>
-  </div>
-  );
-  {"}"}
-</>
+var NewComponent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        &lt;&gt;
+        <title>W3.CSS Template</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+        <style dangerouslysetinnerhtml="{{" __html: "\nbody,h1,h5 {font-family: \"raleway\", sans-serif}\nbody, html {height: 100%}\n.bgimg {\n background-image: url(' w3images onepage_restaurant.jpg');\n min-height: 100%;\n background-position: center;\n background-size: cover;\n}\n" }} dangerouslySetInnerHTML={{__html: "\n  <div className=\"bgimg w3-display-container w3-text-white\">\n    <div className=\"w3-display-middle w3-jumbo\">\n      <p>logo</p>\n    </div>\n    <div className=\"w3-display-topleft w3-container w3-xlarge\">\n      <p>\n        <button\n          onclick=\"document.getElementById('menu').style.display='block'\"\n          className=\"w3-button w3-black\"\n        >\n          menu\n        </button>\n      </p>\n      <p>\n        <button\n          onclick=\"document.getElementById('contact').style.display='block'\"\n          className=\"w3-button w3-black\"\n        >\n          contact\n        </button>\n      </p>\n    </div>\n    <div className=\"w3-display-bottomleft w3-container\">\n      <p className=\"w3-xlarge\">monday - friday 10-23 | saturday 14-02</p>\n      <p className=\"w3-large\">42 village St, New York</p>\n      <p>\n        powered by{\" \"}\n        <a href=\"https://www.w3schools.com/w3css/default.asp\" target=\"_blank\">\n          w3.css\n        </a>\n      </p>\n    </div>\n  </div>\n  {/* Menu Modal */}\n  <div id=\"menu\" className=\"w3-modal\">\n    <div className=\"w3-modal-content w3-animate-zoom\">\n      <div className=\"w3-container w3-black w3-display-container\">\n        <span\n          onclick=\"document.getElementById('menu').style.display='none'\"\n          className=\"w3-button w3-display-topright w3-large\"\n        >\n          x\n        </span>\n        <h1>Starters</h1>\n      </div>\n      <div className=\"w3-container\">\n        <h5>\n          Tomato Soup <b>$2.50</b>\n        </h5>\n        <h5>\n          Chicken Salad <b>$3.50</b>\n        </h5>\n        <h5>\n          Bread and Butter <b>$1.00</b>\n        </h5>\n      </div>\n      <div className=\"w3-container w3-black\">\n        <h1>Main Courses</h1>\n      </div>\n      <div className=\"w3-container\">\n        <h5>\n          Grilled Fish and Potatoes <b>$8.50</b>\n        </h5>\n        <h5>\n          Italian Pizza <b>$5.50</b>\n        </h5>\n        <h5>\n          Veggie Pasta <b>$4.00</b>\n        </h5>\n        <h5>\n          Chicken and Potatoes <b>$6.50</b>\n        </h5>\n        <h5>\n          Deluxe Burger <b>$5.00</b>\n        </h5>\n      </div>\n      <div className=\"w3-container w3-black\">\n        <h1>Desserts</h1>\n      </div>\n      <div className=\"w3-container\">\n        <h5>\n          Fruit Salad <b>$2.50</b>\n        </h5>\n        <h5>\n          Ice cream <b>$2.00</b>\n        </h5>\n        <h5>\n          Chocolate Cake <b>$4.00</b>\n        </h5>\n        <h5>\n          Cheese <b>$5.50</b>\n        </h5>\n      </div>\n    </div>\n  </div>\n  {/* Contact Modal */}\n  <div id=\"contact\" className=\"w3-modal\">\n    <div className=\"w3-modal-content w3-animate-zoom\">\n      <div className=\"w3-container w3-black\">\n        <span\n          onclick=\"document.getElementById('contact').style.display='none'\"\n          className=\"w3-button w3-display-topright w3-large\"\n        >\n          x\n        </span>\n        <h1>Contact</h1>\n      </div>\n      <div className=\"w3-container\">\n        <p>\n          Reserve a table, ask for today's special or just send us a message:\n        </p>\n        <form action=\"/action_page.php\" target=\"_blank\">\n          <p>\n            <input\n              className=\"w3-input w3-padding-16 w3-border\"\n              type=\"text\"\n              placeholder=\"Name\"\n              required=\"\"\n              name=\"Name\"\n            />\n          </p>\n          <p>\n            <input\n              className=\"w3-input w3-padding-16 w3-border\"\n              type=\"number\"\n              placeholder=\"How many people\"\n              required=\"\"\n              name=\"People\"\n            />\n          </p>\n          <p>\n            <input\n              className=\"w3-input w3-padding-16 w3-border\"\n              type=\"datetime-local\"\n              placeholder=\"Date and time\"\n              required=\"\"\n              name=\"date\"\n              defaultValue=\"2020-11-16T20:00\"\n            />\n          </p>\n          <p>\n            <input\n              className=\"w3-input w3-padding-16 w3-border\"\n              type=\"text\"\n              placeholder=\"Message \\ Special requirements\"\n              required=\"\"\n              name=\"Message\"\n            />\n          </p>\n          <p>\n            <button className=\"w3-button\" type=\"submit\">\n              SEND MESSAGE\n            </button>\n          </p>\n        </form>\n      </div>\n    </div>\n  </div>\n</>\n" }} /></div>
+    );
+  }
+});
